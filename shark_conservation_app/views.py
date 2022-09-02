@@ -10,6 +10,6 @@ class SharkList(generics.ListAPIView):
     queryset = Shark.objects.all()
     serializer_class = SharkSerializer
 
-class SharkDetail(generics.RetrieveAPIView):
+class SharkDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Shark.objects.all()
     serializer_class = SharkSerializer

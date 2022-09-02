@@ -6,4 +6,4 @@ from .models import Shark
 class SharkSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Shark
-        fields = ("name","description", "location", "avg_length", "diet")
+        fields = ("id","name","description", "location", "avg_length", "diet")
